@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variable */
+:root{
+    --navbar-height: 59px;  
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    top: 0px;
+    background-color: rgb(214, 205, 178);
+    cursor: pointer;
+}
+
+#navbar::before{
+    content: "";
+    background-color:coral;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4; 
+}
+
+
+/*logo and iamge*/
+#logo{
+    /* margin: 10px 34px; */
+
+}
+#logo img{
+    height:100px;
+    width: 100px;
+    /* margin: 3px 6px; */
+    opacity: 100;
+}
+
+/* navigation bar: list styling */
+
+#navbar ul{
+    display: flex;
+    color: orangered;
+    font-size: 2.8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 3px 22px;
+    color:rgb(236, 10, 10);
+}
+#navbar ul li a{
+    color: rgb(109, 87, 234);
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a:hover{
+    color:chartreuse;
+    background-color:cadetblue;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:368px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('gym background images 1.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(236, 10, 10);
+    text-align: center;
+}
+#home p{
+    color:rgb(236, 10, 10);
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*services section*/
+#services{
+    margin:0px; 
+    display: flex;
+    height: 30%;
+    width: 100%;
+    background-image: url('light black images.jpg');
+}
+#services .box{
+    border: 2px solid red;
+    padding: 0px;
+    margin:2px 30px;
+    border-radius:30px ;
+    background-color:rgb(128, 127, 127);
+}
+#services .box img{
+    height: 60%;
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+/*client section*/
+#clients-section{
+    position: relative;
+    height:100%;
+    
+}
+#clients-section::before{
+   content: "";
+   position: absolute;
+   background:url('clients  Gym Background.jpg');
+   width:100%;
+   height: 100%;
+   z-index: -2;
+   opacity: 3.0;    
+}
+
+#Clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clients-items{
+    padding: 30px;
+}
+#Clients img{
+    height:500px;
+    
+}
+
+#registration::before{
+    content: "";
+    position:absolute;
+    /* left: 15%; */
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: url('register.png');
+}
+#registration-box{
+    color:darkblue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    z-index: 5;
+}
+#registration-box input,
+#registration-box textarea{
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color:bisque
+}
+#registration-box form{
+    width: 40%;
+}
+
+#registration-box label{
+    background-color:lavender;
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+footer{
+    background:black;
+    color: white;
+    padding:10px 20px;
+
+}
+
+/*utility classes*/
+.h-primary{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(224, 173, 96);
+    font-size: 2.5rem;
+    padding: 10px;
+
+}
+#back{
+    background-color: rgb(214, 205, 178);
+}
+.h-secondary{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    margin: 20px;
+    font-size: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    font-size:1rem;
+}
+.center1{
+    text-align: center;
+    font-size:2.5rem;
+}
+
